@@ -2,7 +2,7 @@
 // Set this to your FastAPI backend URL.
 // If you are running the uvicorn server with SSL, it will be https://localhost:8443
 // If you are running the uvicorn server without SSL, it will be http://localhost:8000
-const API_BASE_URL = "https://localhost:8443";
+const API_BASE_URL = "http://127.0.0.1:8000";
 
 // --- DOM ELEMENTS ---
 const notesList = document.getElementById('notes-list');
