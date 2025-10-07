@@ -1,4 +1,3 @@
-# Tutorial 1!!
+# Tutorial 2 + 3 Demos
 
-howdy
-jjjnidfbkfjbgj
+Notes App - by Ada and Vir!
