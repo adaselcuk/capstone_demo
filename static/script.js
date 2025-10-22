@@ -32,7 +32,7 @@ function clearError() {
 
 /**
  * Renders the list of notes to the page.
- * @param {Array<Object>} notes - An array of note objects, e.g., [{id: 1, text: 'My first note'}]
+ * @param {Array<Object>} notes - An array of note objects, e.g., [{id_: 1, text: 'My first note'}]
  */
 function renderNotes(notes) {
     notesList.innerHTML = ''; // Clear existing notes
@@ -42,7 +42,7 @@ function renderNotes(notes) {
     }
     notes.forEach(note => {
         const li = document.createElement('li');
-        li.dataset.id = note.id;
+        li.dataset.id_ = note.id_;
 
         const span = document.createElement('span');
         span.className = 'note-text';
@@ -53,7 +53,7 @@ function renderNotes(notes) {
         deleteBtn.textContent = 'Delete';
         
         deleteBtn.addEventListener('click', async () => {
-            await deleteNote(note.id);
+            await deleteNote(note.id_);
         });
 
         li.appendChild(span);
